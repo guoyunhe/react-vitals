@@ -240,7 +240,7 @@ ${n.map(({variableName:r,uniqueLocalName:o})=>`  reactHotLoader.register(${r}, "
 is useful for non-important and even annoying content, like advertise blocks, survey popups, etc.`]}),`
 `,A.jsxs(t.p,{children:[`However, not all browsers support Web Vitals APIs. When these APIs are not available, the content
 will be rendered after 5 seconds anyway. You can use `,A.jsx(t.code,{children:"timeout"}),` prop to control maximum time to wait
-in milliseconds.`]}),`
+in milliseconds. Usually, `,A.jsx(t.code,{children:"timeout"})," should be larger than the LCP you want to achieve."]}),`
 `,A.jsx(t.pre,{imports:{},children:A.jsx(t.code,{className:"language-jsx",children:`<AfterVitals timeout={3000}>
   <SomeAdvertise />
   <SomeSurvey />
