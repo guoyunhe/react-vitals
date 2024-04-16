@@ -52,5 +52,8 @@
     "doc": {
       "basename": "/react-vitals/"
     }
+  },
+  "dependencies": {
+    "web-vitals": "^3.5.2"
   }
 }
