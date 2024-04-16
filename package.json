@@ -38,14 +38,14 @@
     "extends": "eslint-config-rive"
   },
   "devDependencies": {
-    "@mdx-js/react": "^3.0.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0",
+    "@mdx-js/react": "^3.0.1",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
     "react": "^18.2.0",
-    "react-doc-ui": "^2.0.0",
+    "react-doc-ui": "^2.2.6",
     "react-dom": "^18.2.0",
-    "rive": "^2.0.0",
-    "typescript": "^5.0.0"
+    "rive": "^2.0.33",
+    "typescript": "^5.4.5"
   },
   "rive": {
     "template": "base",
