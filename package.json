@@ -1,8 +1,14 @@
 {
   "name": "react-vitals",
   "version": "0.0.1",
-  "description": "",
-  "keywords": [],
+  "description": "React components, hooks and utilities to improve page loading performance and web vitals scores (FCP, LCP, CLS, INP)",
+  "keywords": [
+    "react",
+    "web-vitals",
+    "chrome",
+    "google",
+    "performance"
+  ],
   "homepage": "https://github.com/guoyunhe/react-vitals#readme",
   "bugs": {
     "url": "https://github.com/guoyunhe/react-vitals/issues"
@@ -37,6 +43,9 @@
   "eslintConfig": {
     "extends": "eslint-config-rive"
   },
+  "dependencies": {
+    "web-vitals": "^3.5.2"
+  },
   "devDependencies": {
     "@mdx-js/react": "^3.0.1",
     "@types/react": "^18.2.79",
@@ -48,12 +57,9 @@
     "typescript": "^5.4.5"
   },
   "rive": {
-    "template": "base",
+    "template": "react",
     "doc": {
       "basename": "/react-vitals/"
     }
-  },
-  "dependencies": {
-    "web-vitals": "^3.5.2"
   }
 }
