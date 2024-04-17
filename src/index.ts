@@ -1,1 +1,1 @@
-export * from './AfterLCP';
+export * from './DelayLoad';

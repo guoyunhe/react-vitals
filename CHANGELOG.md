@@ -2,7 +2,7 @@
 
 ## 0.2.0 - 2024-04-17
 
-- Added `<AfterLCP/>` component
+- Added `<DelayLoad/>` component
 
 ## 0.1.0 - 2024-04-16
 

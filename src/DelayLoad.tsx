@@ -1,24 +1,20 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
-import { onLCP } from 'web-vitals';
 
-export interface AfterLCPProps {
+export interface DelayLoadProps {
+  /**
+   * Milliseconds to wait before rendering children
+   * @default 3000
+   */
   timeout?: number;
   children?: ReactNode;
 }
 
-export function AfterLCP({ timeout = 10000, children }: AfterLCPProps) {
+export function DelayLoad({ timeout = 3000, children }: DelayLoadProps) {
   const mountedRef = useRef(true);
   const [active, setActive] = useState(false);
 
   useEffect(() => {
     mountedRef.current = true;
-
-    onLCP(() => {
-      console.log('LCP');
-      if (mountedRef.current) {
-        setActive(true);
-      }
-    });
 
     // when web vitals is not available, use a long timer for fallback
     const timer = window.setTimeout(() => {

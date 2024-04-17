@@ -2,25 +2,23 @@
 
 React components, hooks and utilities to improve web vitals scores (FCP, LCP, CLS, INP)
 
-## AfterLCP
+## DelayLoad
 
-The `<AfterLCP/>` component delay the rendering of children, to not affect FCP, LCP and CLS. It
+The `<DelayLoad/>` component delay the rendering of children, to not affect FCP, LCP and CLS. It
 is useful for non-important and even annoying content, like advertise blocks, survey popups, etc.
-
-However, not all browsers support Web Vitals APIs. When these APIs are not available, the content
-will be rendered after 5 seconds anyway. You can use `timeout` prop to control maximum time to wait
-in milliseconds. Usually, `timeout` should be larger than the LCP you want to achieve.
+You can use `timeout` prop (default: 3000) to control maximum milliseconds to wait before rendering. Usually,
+`timeout` should be larger than the LCP you want to achieve.
 
 ```jsx
-import { AfterLCP } from 'react-vitals';
+import { DelayLoad } from 'react-vitals';
 
-const Advertise = () => <div>Advertise loaded...</div>;
-const Survey = () => <div>Survey loaded...</div>;
+const Advertise = () => <div style={{ height: 400, background: 'orange' }}>Advertise loaded!</div>;
+const Survey = () => <div style={{ height: 400, background: 'green' }}>Survey loaded!</div>;
 
 render(
-  <AfterLCP timeout={10000}>
+  <DelayLoad timeout={100}>
     <Advertise />
     <Survey />
-  </AfterLCP>,
+  </DelayLoad>,
 );
 ```
