@@ -1,6 +1,6 @@
 {
   "name": "react-vitals",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "React components, hooks and utilities to improve page loading performance and web vitals scores (FCP, LCP, CLS, INP)",
   "keywords": [
     "react",
