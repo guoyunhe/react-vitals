@@ -13,8 +13,6 @@ export function SlowSkip({ children, timeout = 1500 }: SlowSkipProps) {
     setShow(now < timeout || now > 60000);
   }, [timeout, now]);
 
-  useEffect;
-
   if (show) {
     return <>{children}</>;
   }
