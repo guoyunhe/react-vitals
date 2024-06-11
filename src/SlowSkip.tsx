@@ -1,16 +1,19 @@
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, { ReactNode, useEffect, useMemo, useState } from 'react';
 
 export interface SlowSkipProps {
-  time?: number;
+  timeout?: number;
   children?: ReactNode;
 }
 
-export function SlowSkip({ children, time = 2000 }: SlowSkipProps) {
+export function SlowSkip({ children, timeout = 1500 }: SlowSkipProps) {
   const [show, setShow] = useState(false);
+  const now = useMemo(() => performance.now(), []);
 
   useEffect(() => {
-    setShow(performance.now() < time);
-  }, [time]);
+    setShow(now < timeout || now > 60000);
+  }, [timeout, now]);
+
+  useEffect;
 
   if (show) {
     return <>{children}</>;
