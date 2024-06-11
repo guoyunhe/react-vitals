@@ -48,18 +48,28 @@
   },
   "devDependencies": {
     "@mdx-js/react": "^3.0.1",
-    "@types/react": "^18.2.79",
-    "@types/react-dom": "^18.2.25",
-    "react": "^18.2.0",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
     "react-doc-ui": "^2.2.6",
-    "react-dom": "^18.2.0",
+    "react-dom": "^18.3.1",
     "rive": "^2.0.33",
     "typescript": "^5.4.5"
   },
   "rive": {
     "template": "react",
     "doc": {
-      "basename": "/react-vitals/"
+      "basename": "/react-vitals/",
+      "languages": [
+        {
+          "code": "en",
+          "name": "English"
+        },
+        {
+          "code": "zh",
+          "name": "中文"
+        }
+      ]
     }
   }
 }

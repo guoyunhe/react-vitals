@@ -2,6 +2,8 @@
 
 React components, hooks and utilities to improve web vitals scores (FCP, LCP, CLS, INP)
 
+## SlowSkip
+
 ## DelayLoad
 
 The `<DelayLoad/>` component delay the rendering of children, to not affect FCP, LCP and CLS. It
