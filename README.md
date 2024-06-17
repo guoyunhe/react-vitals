@@ -1,6 +1,8 @@
+**English** | [中文](./README.zh.md)
+
 # React Vitals
 
-React components, hooks and utilities to improve web vitals scores (FCP, LCP, CLS, INP)
+React components, hooks and utilities to improve [Web Vitals](https://web.dev/articles/vitals) scores (FCP, LCP, CLS, INP)
 
 ## SlowSkip
 
