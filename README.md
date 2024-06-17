@@ -6,6 +6,28 @@ React components, hooks and utilities to improve [Web Vitals](https://web.dev/ar
 
 ## SlowSkip
 
+SlowSkip downgrades UI and skip some non-important components (like ads) when page loading speed is slow.
+
+THe default blocking window is 1.5s to 10s (related to navigation start). Google's good LCP standard is 2.5s. And images are loaded in 1s in average. 2.5s - 1s = 1.5s (the start time). The end time, 10s, is enough for most pages to load. After this, SlowSkip won't prevent new mounted content from rendering.
+
+```jsx
+import { SlowSkip } from 'react-vitals';
+
+<SlowSkip>
+  <div>ads, banner, survey, etc.</div>
+</SlowSkip>;
+```
+
+However, the start and end time from my experience may not fit your use case. You should choose your own settings for your use cases. If `start` is too small, content show rate may be too low. If `start` is too big, you will see no changes to LCP. You usually don't need to change `end` property. But I won't stop you if you want to.
+
+```jsx
+import { SlowSkip } from 'react-vitals';
+
+<SlowSkip start={1200} end={15000}>
+  <div>ads, banner, survey, etc.</div>
+</SlowSkip>;
+```
+
 ## DelayLoad
 
 The `<DelayLoad/>` component delay the rendering of children, to not affect FCP, LCP and CLS. It
