@@ -227,8 +227,9 @@ ${n.map(({variableName:r,uniqueLocalName:o})=>`  reactHotLoader.register(${r}, "
 `,k.jsx(t.h2,{children:"1.0.0 - 2024-04-17"}),`
 `,k.jsxs(t.ul,{children:[`
 `,k.jsxs(t.li,{children:["Added ",k.jsx(t.code,{children:"<DelayLoad/>"})," component"]}),`
-`]})]})}function om(e={}){const{wrapper:t}={...zr(),...e.components};return t?k.jsx(t,{...e,children:k.jsx(Vd,{...e})}):Vd(e)}om.displayName="MDXContent";const EE=Object.freeze(Object.defineProperty({__proto__:null,default:om,filepath:xE,frontmatter:SE,title:_E},Symbol.toStringTag,{value:"Module"}));function IE({timeout:e=3e3,children:t}){const n=M.useRef(!0),[r,o]=M.useState(!1);return M.useEffect(()=>{n.current=!0;const f=window.setTimeout(()=>{console.log(e),o(!0)},e);return()=>{n.current=!1,window.clearTimeout(f)}},[]),r?k.jsx(k.Fragment,{children:t}):null}function qd({children:e,start:t=1500,end:n=1e4}){const[r,o]=M.useState(!1),f=M.useMemo(()=>performance.now(),[]);return M.useEffect(()=>{o(f<t||f>n)},[t,f]),r?k.jsx(k.Fragment,{children:e}):null}const kE="README.md",TE="React Vitals",CE=void 0;function Hd(e){const t={code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",...zr(),...e.components};return k.jsxs(k.Fragment,{children:[k.jsx(t.h1,{children:"React Vitals"}),`
-`,k.jsx(t.p,{children:"React components, hooks and utilities to improve web vitals scores (FCP, LCP, CLS, INP)"}),`
+`]})]})}function om(e={}){const{wrapper:t}={...zr(),...e.components};return t?k.jsx(t,{...e,children:k.jsx(Vd,{...e})}):Vd(e)}om.displayName="MDXContent";const EE=Object.freeze(Object.defineProperty({__proto__:null,default:om,filepath:xE,frontmatter:SE,title:_E},Symbol.toStringTag,{value:"Module"}));function IE({timeout:e=3e3,children:t}){const n=M.useRef(!0),[r,o]=M.useState(!1);return M.useEffect(()=>{n.current=!0;const f=window.setTimeout(()=>{console.log(e),o(!0)},e);return()=>{n.current=!1,window.clearTimeout(f)}},[]),r?k.jsx(k.Fragment,{children:t}):null}function qd({children:e,start:t=1500,end:n=1e4}){const[r,o]=M.useState(!1),f=M.useMemo(()=>performance.now(),[]);return M.useEffect(()=>{o(f<t||f>n)},[t,f]),r?k.jsx(k.Fragment,{children:e}):null}const kE="README.md",TE="React Vitals",CE=void 0;function Hd(e){const t={a:"a",code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",strong:"strong",...zr(),...e.components};return k.jsxs(k.Fragment,{children:[k.jsxs(t.p,{children:[k.jsx(t.strong,{children:"English"})," | ",k.jsx(t.a,{href:"./README.zh.md",children:"中文"})]}),`
+`,k.jsx(t.h1,{children:"React Vitals"}),`
+`,k.jsxs(t.p,{children:["React components, hooks and utilities to improve ",k.jsx(t.a,{href:"https://web.dev/articles/vitals",children:"Web Vitals"})," scores (FCP, LCP, CLS, INP)"]}),`
 `,k.jsx(t.h2,{children:"SlowSkip"}),`
 `,k.jsx(t.h2,{children:"DelayLoad"}),`
 `,k.jsxs(t.p,{children:["The ",k.jsx(t.code,{children:"<DelayLoad/>"}),` component delay the rendering of children, to not affect FCP, LCP and CLS. It
@@ -246,8 +247,9 @@ render(
     <Survey />
   </DelayLoad>,
 );
-`})})]})}function lm(e={}){const{wrapper:t}={...zr(),...e.components};return t?k.jsx(t,{...e,children:k.jsx(Hd,{...e})}):Hd(e)}lm.displayName="MDXContent";const NE=Object.freeze(Object.defineProperty({__proto__:null,default:lm,filepath:kE,frontmatter:CE,title:TE},Symbol.toStringTag,{value:"Module"})),AE="README.zh.md",LE="React Vitals",RE=void 0;function Wd(e){const t={code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",...zr(),...e.components};return k.jsxs(k.Fragment,{children:[k.jsx(t.h1,{children:"React Vitals"}),`
-`,k.jsx(t.p,{children:"用于提升 Web Vitals (FCP, LCP, CLS, INP) 分的 React 组件，钩子和工具集合。"}),`
+`})})]})}function lm(e={}){const{wrapper:t}={...zr(),...e.components};return t?k.jsx(t,{...e,children:k.jsx(Hd,{...e})}):Hd(e)}lm.displayName="MDXContent";const NE=Object.freeze(Object.defineProperty({__proto__:null,default:lm,filepath:kE,frontmatter:CE,title:TE},Symbol.toStringTag,{value:"Module"})),AE="README.zh.md",LE="React Vitals",RE=void 0;function Wd(e){const t={a:"a",code:"code",h1:"h1",h2:"h2",p:"p",pre:"pre",strong:"strong",...zr(),...e.components};return k.jsxs(k.Fragment,{children:[k.jsxs(t.p,{children:[k.jsx(t.a,{href:"./README.md",children:"English"})," | ",k.jsx(t.strong,{children:"中文"})]}),`
+`,k.jsx(t.h1,{children:"React Vitals"}),`
+`,k.jsxs(t.p,{children:["用于提升 ",k.jsx(t.a,{href:"https://web.dev/articles/vitals?hl=zh-cn",children:"Web Vitals"})," 评分 (FCP, LCP, CLS, INP) 的 React 组件，钩子和工具集合。"]}),`
 `,k.jsx(t.h2,{children:"SlowSkip"}),`
 `,k.jsx(t.p,{children:"SlowSkip 是当页面首次加载速度较慢时进行降级，跳过某些非功能组件的渲染，比如广告等。"}),`
 `,k.jsx(t.p,{children:"默认的阻断窗口期为 1.5s 到 10s："}),`
@@ -255,12 +257,12 @@ render(
 
 <SlowSkip>
   <div>广告，横幅，不重要的弹窗等</div>
-</SlowSkip>
+</SlowSkip>;
 `})}),`
 `,k.jsxs(t.p,{children:["如果需要调整阻断窗口，可以调整 ",k.jsx(t.code,{children:"start"})," 和 ",k.jsx(t.code,{children:"end"})," 属性："]}),`
 `,k.jsx(t.pre,{imports:{SlowSkip:qd},children:k.jsx(t.code,{className:"language-jsx",children:`import { SlowSkip } from 'react-vitals';
 
 <SlowSkip start={1200} end={15000}>
   <div>广告，横幅，不重要的弹窗等</div>
-</SlowSkip>
+</SlowSkip>;
 `})})]})}function fm(e={}){const{wrapper:t}={...zr(),...e.components};return t?k.jsx(t,{...e,children:k.jsx(Wd,{...e})}):Wd(e)}fm.displayName="MDXContent";const FE=Object.freeze(Object.defineProperty({__proto__:null,default:fm,filepath:AE,frontmatter:RE,title:LE},Symbol.toStringTag,{value:"Module"}));function DE(){return k.jsx(PE,{docs:[EE,NE,FE],basename:"/react-vitals/",languages:[{code:"en",name:"English"},{code:"zh",name:"中文"}]})}fb(document.getElementById("root")).render(k.jsx(DE,{}));
