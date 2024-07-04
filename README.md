@@ -22,6 +22,20 @@ import { Slice } from 'react-vitals';
 </Slice>;
 ```
 
+Slice size is by default 50x50, which should work for most cases. You can change it to a smaller value if it doesn't work.
+
+```jsx
+import { Slice } from 'react-vitals';
+
+<Slice width={160} height={90} size={20}>
+  <img
+    src="https://s.cn.bing.net/th?id=OHR.ZaharaDeLaSierra_EN-CN1476470896_1920x1080.webp&qlt=50"
+    width={160}
+    height={90}
+  />
+</Slice>;
+```
+
 ## SlowSkip
 
 SlowSkip downgrades UI and skip some non-important components (like ads) when page loading speed is slow.

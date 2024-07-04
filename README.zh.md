@@ -22,6 +22,20 @@ import { Slice } from 'react-vitals';
 </Slice>;
 ```
 
+Slice 切片的默认尺寸是 50x50，可以适应大多数情况。如果它不生效的话，你可以改成更小的值。
+
+```jsx
+import { Slice } from 'react-vitals';
+
+<Slice width={160} height={90} size={20}>
+  <img
+    src="https://s.cn.bing.net/th?id=OHR.ZaharaDeLaSierra_EN-CN1476470896_1920x1080.webp&qlt=50"
+    width={160}
+    height={90}
+  />
+</Slice>;
+```
+
 ## SlowSkip
 
 SlowSkip 是当页面首次加载速度较慢时进行降级，跳过某些非功能组件的渲染，比如广告等。
