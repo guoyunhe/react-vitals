@@ -4,6 +4,24 @@
 
 用于提升 [Web Vitals](https://web.dev/articles/vitals?hl=zh-cn) 评分 (FCP, LCP, CLS, INP) 的 React 组件，钩子和工具集合。
 
+## Slice
+
+LCP 的意思是 Largest Content Painting，最大内容绘制。通常 LCP 元素是图片或者大块文字。
+
+Slice 将一个大的块切成很多小块，再拼接起来。这样就无法被识别为 LCP 元素，而且视觉上和原来没有什么不同。
+
+```jsx
+import { Slice } from 'react-vitals';
+
+<Slice width={160} height={90}>
+  <img
+    src="https://s.cn.bing.net/th?id=OHR.ZaharaDeLaSierra_EN-CN1476470896_1920x1080.webp&qlt=50"
+    width={160}
+    height={90}
+  />
+</Slice>;
+```
+
 ## SlowSkip
 
 SlowSkip 是当页面首次加载速度较慢时进行降级，跳过某些非功能组件的渲染，比如广告等。

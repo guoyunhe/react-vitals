@@ -4,6 +4,24 @@
 
 React components, hooks and utilities to improve [Web Vitals](https://web.dev/articles/vitals) scores (FCP, LCP, CLS, INP)
 
+## Slice
+
+LCP means Largest Content Painting. LCP element is usually a picture or text block.
+
+Slice cuts a single big block into many small blocks and combines them into a whole. It won't be recognized as LCP element anymore, but looks the same as before.
+
+```jsx
+import { Slice } from 'react-vitals';
+
+<Slice width={160} height={90}>
+  <img
+    src="https://s.cn.bing.net/th?id=OHR.ZaharaDeLaSierra_EN-CN1476470896_1920x1080.webp&qlt=50"
+    width={160}
+    height={90}
+  />
+</Slice>;
+```
+
 ## SlowSkip
 
 SlowSkip downgrades UI and skip some non-important components (like ads) when page loading speed is slow.

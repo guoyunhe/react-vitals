@@ -54,7 +54,7 @@
     "react-doc-ui": "^2.2.6",
     "react-dom": "^18.3.1",
     "rive": "^2.0.33",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.3"
   },
   "rive": {
     "template": "react",
