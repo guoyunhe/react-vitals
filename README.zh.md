@@ -4,6 +4,27 @@
 
 用于提升 [Web Vitals](https://web.dev/articles/vitals?hl=zh-cn) 评分 (FCP, LCP, CLS, INP) 的 React 组件，钩子和工具集合。
 
+## AfterClick
+
+目前，LCP 计算 DOM 元素会在用户交互后停止。所以你可以在用户点击页面之后再展示广告和弹窗，以避免 LCP 增加。
+
+AfterClick 组件就是用来将内容延迟到用户点击之后挂载。
+
+```jsx
+import { AfterClick } from 'react-vitals';
+
+<div>
+  <p>Click anywhere on page to render the following image:</p>
+  <AfterClick>
+    <img
+      src="https://s.cn.bing.net/th?id=OHR.ZaharaDeLaSierra_EN-CN1476470896_1920x1080.webp&qlt=50"
+      width={160}
+      height={90}
+    />
+  </AfterClick>
+</div>;
+```
+
 ## Slice
 
 LCP 的意思是 Largest Content Painting，最大内容绘制。通常 LCP 元素是图片或者大块文字。

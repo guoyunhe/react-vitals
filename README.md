@@ -4,6 +4,27 @@
 
 React components, hooks and utilities to improve [Web Vitals](https://web.dev/articles/vitals) scores (FCP, LCP, CLS, INP)
 
+## AfterClick
+
+Currently, LCP stops counting elements after user interaction. So you can render ads, or popups after page clicked by user to avoid increasing LCP.
+
+AfterClick component delay content rendering after page clicked.
+
+```jsx
+import { AfterClick } from 'react-vitals';
+
+<div>
+  <p>Click anywhere on page to render the following image:</p>
+  <AfterClick>
+    <img
+      src="https://s.cn.bing.net/th?id=OHR.ZaharaDeLaSierra_EN-CN1476470896_1920x1080.webp&qlt=50"
+      width={160}
+      height={90}
+    />
+  </AfterClick>
+</div>;
+```
+
 ## Slice
 
 LCP means Largest Content Painting. LCP element is usually a picture or text block.
