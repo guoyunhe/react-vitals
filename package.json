@@ -20,8 +20,8 @@
   "funding": "https://github.com/sponsors/guoyunhe",
   "license": "ISC",
   "author": "",
-  "main": "dist/cjs/index.js",
-  "module": "dist/index.js",
+  "type": "module",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist",
@@ -40,21 +40,28 @@
     "test:watch": "rive test --watch"
   },
   "prettier": "prettier-config-rive",
-  "eslintConfig": {
-    "extends": "eslint-config-rive"
+  "stylelint": {
+    "extends": "stylelint-config-rive"
   },
   "dependencies": {
     "web-vitals": "^3.5.2"
   },
   "devDependencies": {
-    "@mdx-js/react": "^3.0.1",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
+    "@mdx-js/react": "^3.1.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^16.1.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^20.17.12",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
     "react": "^18.3.1",
-    "react-doc-ui": "^2.2.6",
+    "react-doc-ui": "^2.3.0",
     "react-dom": "^18.3.1",
-    "rive": "^2.0.33",
-    "typescript": "^5.5.3"
+    "rive": "^3.0.1",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
   },
   "rive": {
     "template": "react",
