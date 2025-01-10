@@ -1,4 +1,4 @@
 export * from './AfterClick';
-export * from './DelayLoad';
+export * from './Delay';
 export * from './Slice';
 export * from './SlowSkip';

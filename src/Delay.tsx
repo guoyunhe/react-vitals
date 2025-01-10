@@ -1,6 +1,6 @@
-import React, { ReactNode, useEffect, useRef, useState } from 'react';
+import { ReactNode, useEffect, useRef, useState } from 'react';
 
-export interface DelayLoadProps {
+export interface DelayProps {
   /**
    * Milliseconds to wait before rendering children
    * @default 3000
@@ -9,7 +9,7 @@ export interface DelayLoadProps {
   children?: ReactNode;
 }
 
-export function DelayLoad({ timeout = 3000, children }: DelayLoadProps) {
+export function Delay({ timeout = 3000, children }: DelayProps) {
   const mountedRef = useRef(true);
   const [active, setActive] = useState(false);
 
@@ -18,7 +18,6 @@ export function DelayLoad({ timeout = 3000, children }: DelayLoadProps) {
 
     // when web vitals is not available, use a long timer for fallback
     const timer = window.setTimeout(() => {
-      console.log(timeout);
       setActive(true);
     }, timeout);
 
